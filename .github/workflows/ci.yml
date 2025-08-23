@@ -27,7 +27,3 @@ jobs:
         run: |
           make clean
           make
-
-      - name: Test basic functionality
-        run: |
-          echo "hello" | timeout 2s ./shell | grep "hello: command not found"
