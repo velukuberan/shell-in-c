@@ -1,0 +1,33 @@
+name: C CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  format-and-build:
+    runs-on: ubuntu-latest
+    name: Format Check & Build
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install clang-format
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang-format build-essential
+
+      - name: Check code formatting
+        run: |
+          find . -name "*.c" -o -name "*.h" | xargs clang-format --dry-run --Werror
+
+      - name: Build project
+        run: |
+          make clean
+          make
+
+      - name: Test basic functionality
+        run: |
+          echo "hello" | timeout 2s ./shell | grep "hello: command not found"
