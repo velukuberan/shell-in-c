@@ -7,7 +7,6 @@ int shell() {
     setbuf(stdout, NULL);
 
     while (1) {
-
         // Uncomment this block to pass the first stage
         printf("$ ");
 
