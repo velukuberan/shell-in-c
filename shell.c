@@ -3,9 +3,10 @@
 #include <string.h>
 
 int main() {
+    // Flush after every printf
+    setbuf(stdout, NULL);
+
     while (1) {
-        // Flush after every printf
-        setbuf(stdout, NULL);
 
         // Uncomment this block to pass the first stage
         printf("$ ");
