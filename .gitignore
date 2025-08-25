@@ -4,6 +4,8 @@
 .vscode/
 #Cache folder
 .alcache/
+# build folder
+build/
 #Symbols folder
 .alpackages/
 #Snapshots folder
@@ -20,4 +22,3 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
-shell
