@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main() {
+int shell() {
     // Flush after every printf
     setbuf(stdout, NULL);
 

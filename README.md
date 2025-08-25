@@ -31,7 +31,10 @@ gcc main.c -o main
 Run the shell:
 
 ```bash
-./main
+# From project root - this also works
+cmake -B build
+cmake --build build
+./build/bin/shell
 ```
 
 ## 💻 Usage
