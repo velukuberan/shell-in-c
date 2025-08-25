@@ -25,15 +25,15 @@ Clone the repository and build with Cargo:
 ```bash
 git clone https://github.com/velukuberan/shell-in-c.git
 cd shell-in-c 
-gcc main.c -o main
+chmod +x build.sh 
+./build.sh
+
 ```
 
 Run the shell:
 
 ```bash
 # From project root - this also works
-cmake -B build
-cmake --build build
 ./build/bin/shell
 ```
 
