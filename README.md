@@ -28,6 +28,12 @@ cd shell-in-c
 chmod +x build.sh 
 ./build.sh
 
+# to clean the build (removes the build dir)
+./build.sh clean
+
+# for coding standards (format it according to the google standards)
+./build.sh format
+
 ```
 
 Run the shell:
