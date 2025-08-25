@@ -20,26 +20,29 @@ This project is mainly for learning purposes — exploring command parsing, REPL
 
 ## 📦 Installation
 
-Clone the repository and build with Cargo:
+Clone the repository
 
 ```bash
 git clone https://github.com/velukuberan/shell-in-c.git
 cd shell-in-c 
 chmod +x build.sh 
-./build.sh
-
-# to clean the build (removes the build dir)
-./build.sh clean
-
-# for coding standards (format it according to the google standards)
-./build.sh format
 
 ```
 
 Run the shell:
 
 ```bash
-# From project root - this also works
+
+# build the project
+./build.sh
+
+# to clean the build (removes the build directory)
+./build.sh clean
+
+# for coding standards (format it according to the google standards)
+./build.sh format
+
+# From project root
 ./build/bin/shell
 ```
 
