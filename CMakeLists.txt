@@ -14,3 +14,11 @@ set(SOURCES
     src/parser/parser.c
     src/commands/commands.c
 )
+
+# Add the executable (this was missing!)
+add_executable(shell ${SOURCES})
+
+# Set output directory
+set_target_properties(shell PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
+)
